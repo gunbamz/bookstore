@@ -111,4 +111,3 @@ app.delete('/api/books/:_id', (req, res) => {
 });
 
 app.listen(port);
-console.log('Running on port 3000...');
