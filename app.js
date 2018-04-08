@@ -10,7 +10,7 @@ Genre =require('./models/genre');
 Book =require('./models/book');
 
 // Connect to Mongoose
-mongoose.connect('mongodb://muyiwa:Webproject2017@ds139219.mlab.com:39219/bookstore');
+mongoose.connect('mongodb://muyiwa:Webproject2017@ds139219.mlab.com:39219/muyiwa');
 var db = mongoose.connection;
 
 //port
