@@ -10,8 +10,12 @@ Genre =require('./models/genre');
 Book =require('./models/book');
 
 // Connect to Mongoose
-mongoose.connect('mongodb://localhost:27017/bookstore');
+mongoose.connect('mongodb://muyiwa:Webproject2017$$@ds139219.mlab.com:39219/bookstore');
 var db = mongoose.connection;
+
+//port
+
+const port = process.env.PORT || 8080;
 
 app.get('/', (req, res) => {
 	res.send('Please use /api/books or /api/genres');
@@ -106,5 +110,5 @@ app.delete('/api/books/:_id', (req, res) => {
 	});
 });
 
-app.listen(3000);
+app.listen(port);
 console.log('Running on port 3000...');
